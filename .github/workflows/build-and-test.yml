@@ -16,6 +16,8 @@ jobs:
           node-version: '20' 
       - run: npm install 
       - run: npm run lint 
+        env:
+          ESLINT_USE_FLAT_CONFIG: "false"
       - run: npm test 
  
   build: 
